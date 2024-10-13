@@ -1,0 +1,95 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --navbar-height: 59px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.logo {
+    margin: 10px 34px;
+}
+.logo img {
+    border-radius: 50%;
+    height:  60px;
+    margin: 3px 6px;
+    
+}
+.navbar ul {
+    display: flex;
+}
+.navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+.navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+.navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+.home {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+.home::before {
+    content: "";
+    position: absolute;
+    background: url(https://img.freepik.com/premium-photo/assortment-exotic-fresh-fruits-rustic-wooden-table_93314-4812.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+.home h1 {
+    color: white;
+    text-align: center;
+}
+.home p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    
+}
+.h-primary {
+    font-size: 3.8rem;
+    padding: 12px;
+}
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
