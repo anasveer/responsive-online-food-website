@@ -12,6 +12,7 @@
     display: flex;
     align-items: center;
     position: relative;
+    top: 0;
 }
 .logo {
     margin: 10px 34px;
@@ -29,6 +30,8 @@
     content: "";
     background-color: black;
     position: absolute;
+    top: 0px;
+    left: 0px;
     height: 100%;
     width: 100%;
     z-index: -1;
@@ -52,7 +55,7 @@
 .home {
     display: flex;
     flex-direction: column;
-    height: 400px;
+    height: 578px;
     padding: 3px 200px;
     justify-content: center;
     align-items: center;
@@ -60,6 +63,8 @@
 .home::before {
     content: "";
     position: absolute;
+    top: 0px;
+    left: 0px;
     background: url(https://img.freepik.com/premium-photo/assortment-exotic-fresh-fruits-rustic-wooden-table_93314-4812.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -81,7 +86,14 @@
 }
 .h-primary {
     font-size: 3.8rem;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.h-secondary {
+    font-size: 2.3rem;
     padding: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .btn {
     padding: 6px 20px;
@@ -92,4 +104,42 @@
     font-size: 1.5rem;
     border-radius: 10px;
     cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
+#services {
+    margin: 34px;
+    display: flex;
+}
+#services .box {
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 0 6px;
+    border-radius: 28px;
+    background-color: #f2f2f2;
+}
+#services .box img {
+    
+    height: 150px;
+    margin: auto;
+    display: block;
+    
+}
+#services .box p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.client-section {
+    height: 344px;
+}
+.clients img {
+    height: 124px;
+    
+    
+}
+.clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
