@@ -55,7 +55,7 @@
 .home {
     display: flex;
     flex-direction: column;
-    height: 578px;
+    height: 720px;
     padding: 3px 200px;
     justify-content: center;
     align-items: center;
@@ -68,7 +68,7 @@
     background: url('https://img.freepik.com/premium-photo/assortment-exotic-fresh-fruits-rustic-wooden-table_93314-4812.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 105%;
+    height: 100%;
     width: 100%;
     z-index: -1;
     opacity: 1;
@@ -112,11 +112,12 @@
 #services {
     margin: 34px;
     display: flex;
+    
 }
 #services .box {
     border: 2px solid brown;
     padding: 34px;
-    margin: 0 6px;
+    margin: 25px 30px;
     border-radius: 28px;
     
 }
@@ -131,19 +132,20 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .client-section {
-    height: 344px;
+    
     position: relative;
 }
 .client-section::before {
-    content: "";
+    content: '';
     position: absolute;
-    background: url('https://minutemedia-ressh.cloudinary.com/image/upload/v1640183856/shape/cover/sport/643188-gettyimages-153946385-ca1ccfaad9be44325afc434b305adc0d.jpg') ;
+    background: url('https://www.bhg.com/thmb/hEMjd1nGBO5dV0X7eYiC10c1AlE=/3000x0/filters:no_upscale():strip_icc()/how-to-cook-with-fruits-and-vegetables-how-to-store-produce-tomato-3-583916b7f38c45e6bff3f709221dd6f7.jpg');
     background-size: cover;
     width: 100%;
     height: 100%;
     z-index: -1;
-    opacity: 0.3;
+    opacity: 0.4;
 }
+
 .client-item {
     padding: 34px;
 }
@@ -187,9 +189,63 @@
 .contact-box textarea {
     width: 100%;
     padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
 }
 footer {
     background-color: black;
     color: white;
     padding: 9px 20px;
+}
+
+/* responsiveness */
+
+@media only screen and (max-width: 1199px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .navbar ul li a {
+        font-size: 1rem;
+        padding: 0px 7px;
+    }
+    .home {
+        height: 370px;
+        padding: 6px 68px;
+    }
+    .home::before {
+        height: 480px;
+    }
+    .home p {
+        font-size: 13px;
+    }
+  #services {
+    flex-direction: column;
+    width: 77%;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+  }
+  #services .box {
+    padding: 14px;
+    margin: 2px 0px;
+    margin-bottom: 20px;
+  }   
+  .clients {
+    flex-wrap: wrap;
+  }
+  .clients img {
+    width: 66px;
+    padding: 6px;
+    height: auto;
+  }
+  .h-primary {
+    font-size: 26px;
+  }
+  .btn {
+    font-size: 13px;
+    padding: 4px 8px;
+  }
+  .contact-box form {
+    width: 80%;
+  }
 }
