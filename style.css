@@ -4,6 +4,9 @@
     margin: 0;
     padding: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
 :root {
     --navbar-height: 59px;
 }
@@ -11,7 +14,7 @@
 .navbar {
     display: flex;
     align-items: center;
-    position: relative;
+    position: sticky;
     top: 0;
 }
 .logo {
@@ -52,7 +55,7 @@
     color: black;
     background-color: white;
 }
-.home {
+#home {
     display: flex;
     flex-direction: column;
     height: 720px;
@@ -60,7 +63,7 @@
     justify-content: center;
     align-items: center;
 }
-.home::before {
+#home::before {
     content: "";
     position: absolute;
     top: 0px;
@@ -73,11 +76,11 @@
     z-index: -1;
     opacity: 1;
 }
-.home h1 {
+#home h1 {
     color: white;
     text-align: center;
 }
-.home p {
+#home p {
     color: white;
     text-align: center;
     font-size: 1.5rem;
@@ -131,11 +134,11 @@
 #services .box p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.client-section {
+#client-section {
     
     position: relative;
 }
-.client-section::before {
+#client-section::before {
     content: '';
     position: absolute;
     background: url('https://www.bhg.com/thmb/hEMjd1nGBO5dV0X7eYiC10c1AlE=/3000x0/filters:no_upscale():strip_icc()/how-to-cook-with-fruits-and-vegetables-how-to-store-produce-tomato-3-583916b7f38c45e6bff3f709221dd6f7.jpg');
@@ -159,10 +162,10 @@
     justify-content: center;
     align-items: center;
 }
-.contact {
+#contact {
     position: relative;
 }
-.contact::before {
+#contact::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -208,14 +211,14 @@ footer {
         font-size: 1rem;
         padding: 0px 7px;
     }
-    .home {
+    #home {
         height: 370px;
         padding: 6px 68px;
     }
-    .home::before {
+    #home::before {
         height: 480px;
     }
-    .home p {
+    #home p {
         font-size: 13px;
     }
   #services {
